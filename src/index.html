@@ -1,17 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>Buttercup Ward Primary Songs 2022</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="shortcut icon" href="https://www.churchofjesuschrist.org/services/platform/v3/resources/static/image/favicon.ico">
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+  <script>
+    function cs_change_music(music, title) {
+      document.getElementById("my-audio").pause();
+      document.getElementById("my-audio").setAttribute('src', music);
+      document.getElementById("title-name").innerHTML = title;
+      document.getElementById("my-audio").load();
+      document.getElementById("my-audio").play();
+    }
+  </script>
+
+  <div class="container mt-5">
+    <div class="row">
+      <h1 class="text-center">Buttercup Ward Primary Songs 2022</h1>
+    </div>
+    <div class="row mt-3">
+      <audio id="my-audio" controls>
+        <source
+          src="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-0760-when-he-comes-again-words-and-music-192k-eng.mp3"
+          type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="row">
+      <i id="title-name">When He Comes Again</i>
+    </div>
+  </div>
+  <div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th class="text-end">Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-0760-when-he-comes-again-words-and-music-192k-eng.mp3','When He Comes Again');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>When He Comes Again</td>
+          <td class="text-end">
+            <a
+              href="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-0760-when-he-comes-again-words-and-music-192k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-0990-follow-the-prophet-words-and-music-192k-eng.mp3','Follow the Prophet');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>Follow the Prophet</td>
+          <td class="text-end ">
+            <a
+              href="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-0990-follow-the-prophet-words-and-music-192k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-1420-choose-the-right-way-words-and-music-192k-eng.mp3','Choose the Right Way');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>Choose the Right Way</td>
+          <td class="text-end ">
+            <a
+              href="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-1420-choose-the-right-way-words-and-music-192k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-1210-love-one-another-words-and-music-192k-eng.mp3','Love One Another');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>Love One Another</td>
+          <td class="text-end ">
+            <a
+              href="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-1210-love-one-another-words-and-music-192k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-2030-give-said-the-little-stream-words-and-music-192k-eng.mp3','Give, Said the Little Stream');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>"Give," Said the Little Stream</td>
+          <td class="text-end ">
+            <a
+              href="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-2030-give-said-the-little-stream-words-and-music-192k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-1280-keep-the-commandments-words-and-music-192k-eng.mp3','Keep the Commandments');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>Keep the Comandments</td>
+          <td class="text-end ">
+            <a
+              href="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-1280-keep-the-commandments-words-and-music-192k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/youth/children-and-youth-a-face-to-face-event-with-elder-gerrit-w-gong/2019-11-0201-i-will-walk-with-jesus-children-256k-eng.mp3','I Will Walk with Jesus');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>I Will Walk with Jesus</td>
+          <td class="text-end ">
+            <a
+              href="https://media2.ldscdn.org/assets/youth/children-and-youth-a-face-to-face-event-with-elder-gerrit-w-gong/2019-11-0201-i-will-walk-with-jesus-children-256k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-0980-search-ponder-and-pray-words-and-music-192k-eng.mp3','Search, Ponder, and Pray');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>Search, Ponder, and Pray</td>
+          <td class="text-end ">
+            <a
+              href="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-0980-search-ponder-and-pray-words-and-music-192k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-0850-i-love-to-see-the-temple-words-and-music-192k-eng.mp3','I Love to See the Temple');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>I Love to See the Temple</td>
+          <td class="text-end ">
+            <a
+              href="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-0850-i-love-to-see-the-temple-words-and-music-192k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-secondary"
+              onclick="cs_change_music('https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-1440-i-will-be-valiant-words-and-music-192k-eng.mp3','I Will Be Valiant');">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
+                </path>
+              </svg>
+            </button>
+          </td>
+          <td>I Will Be Valiant</td>
+          <td class="text-end ">
+            <a
+              href="https://media2.ldscdn.org/assets/music/childrens-songbook/2002-01-1440-i-will-be-valiant-words-and-music-192k-eng.mp3?download=true">
+              <button type="button" class="btn btn-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-download" viewBox="0 0 16 16">
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                  </path>
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 
 </html>
